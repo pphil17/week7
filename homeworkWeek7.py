@@ -12,16 +12,19 @@ print (len(dnaSeq))
 
 #count the number of A's
 print ("Number of A's in the DNA sequence:")
-print (dnaSeq.count('a'))
+print (dnaSeq.lower().count('a'))
 
 #count the number of C's
 print ("Number of C's in the DNA sequence:")
-print (dnaSeq.count('c'))
+print (dnaSeq.lower().count('c'))
 
 #count the number of T's
 print ("Number of T's in the DNA sequence:")
-print (dnaSeq.count('t'))
+print (dnaSeq.lower().count('t'))
 
 #count the number of G's
 print ("Number of G's in the DNA sequence:")
-print (dnaSeq.count('g'))
+print (dnaSeq.lower().count('g'))
+
+# DB: Good! My only suggestion is to make it more general by allowing both upper- and 
+#     lowercase sequences. You can do this by adding .lower() to dnaSeq (see above).
